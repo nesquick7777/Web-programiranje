@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<h1><a href="file:///C:/Users/student/Desktop/Prvi_Zad.html" target="_self">FERIT</a></h1>
+
+<form>
+  <label for="korisnicko_ime">korisnicko_ime:</label><br>
+  <input type="text" id="korisnicko_ime" maxlength="15" size="15" name="korisnicko_ime" placeholder="Vaše korisničko ime" value=""><br>
+  <label for="lozinka">lozinka:</label><br>
+  <input type="password" id="lozinka" maxlength="15" size="15" name="lname" placeholder="Vaša lozinku" value=""><br><br>
+
+  <label for="ocjena">Izaberite ocjenu:</label>
+  <select name="ocjena" id="ocjene">
+    <option value="nedovoljan">Nedovoljan</option>
+    <option value="dovoljan">Dovoljan</option>
+    <option value="dobar">Dobar</option>
+    <option value="vrlo dobar">Vrlo dobar</option>
+    <option value="odličan">Odličan</option>
+  </select>
+<br><br>
+
+<textarea id="poruka" name="poruka" rows="7" cols="40">
+Komentar
+</textarea>
+
+
+  <p>Usmena ocjena studenta:</p>
+<input type="radio" id="komunikativan" name="ocjena" value="komunikativan">
+<label for="komunikativan">komunikativan</label><br>
+<input type="radio" id="samostalan" name="ocjena" value="samostalan">
+<label for="samostalan">samostalan</label><br>
+<input type="radio" id="radišan" name="ocjena" value="radišan">
+<label for="radišan">radišan</label><br>
+<input type="radio" id="ništa_od _navedenog" name="ocjena" value="ništa_od _navedenog" checked>
+<label for="ništa_od _navedenog">ništa od navedenog</label><br><br>
+
+
+<table>
+  <tr>
+    <td><button type="button" onclick="alert('Poslano!')">Pošalji!</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" onclick="alert('Poništeno!')">Poništi!</button></td>
+  </tr>
+</table>
+</form>
+
+</body>
+</html>
